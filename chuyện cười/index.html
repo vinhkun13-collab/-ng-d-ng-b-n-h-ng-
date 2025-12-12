@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Menu Tổng Hợp</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="menu">
+<button onclick="showPage('funny')">Chuyện cười</button>
+<button onclick="showPage('music')">Âm nhạc</button>
+<button onclick="showPage('effects')">Hiệu ứng đẹp</button>
+</div>
+
+
+<!-- CHUYỆN CƯỜI -->
+<div id="funny" class="page hidden">
+<h2>Chuyện cười vui</h2>
+<p>🐸 Vì sao ếch không bao giờ bị lạc? — Vì nó luôn "nhảy" đúng hướng! 😂</p>
+<p>🤡 Con gà đi bộ qua đường để làm gì? — Để sang bên kia! 😆</p>
+</div>
+
+
+<!-- ÂM NHẠC -->
+<div id="music" class="page hidden">
+<h2>Nghe nhạc</h2>
+<audio id="player" controls>
+<source src="music1.mp3" type="audio/mpeg">
+</audio>
+<br>
+<button onclick="playSong('music1.mp3')">Sơn Tùng - Bài 1</button>
+<button onclick="playSong('music2.mp3')">Sơn Tùng - Bài 2</button>
+</div>
+
+
+<!-- HIỆU ỨNG ĐẸP -->
+<div id="effects" class="page hidden">
+<h2>Hiệu ứng neon + pháo hoa</h2>
+<canvas id="fireworks"></canvas>
+<div class="neon">Vinh Đẹp Trai</div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
